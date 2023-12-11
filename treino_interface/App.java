@@ -2,10 +2,10 @@ package treino_interface;
 
 public class App {
     public static void main(String[] args) {
-       Circulo circuloPequeno = new Circulo(2);
-        System.out.println(circuloPequeno.calcularArea());
-    
+        Circulo circulo = new Circulo(2);
         Quadrado quadrado=new Quadrado(5);
-        System.out.println(quadrado.calcularArea());
+
+        CalculadorArea calculador=new CalculadorArea();
+        System.out.println(calculador.somarAreas(quadrado, quadrado));
     }
 }
